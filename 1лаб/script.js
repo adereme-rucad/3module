@@ -116,3 +116,31 @@ gameLoop();
 function updateScore(score) {
   // TODO: Реализуй меня!
 }
+
+///////////////////////////////////////////////////////
+
+document.addEventListener('keydown', function(event) {
+  switch (event.key) {
+    case 'ArrowLeft':
+    case 'a':
+    case 'ф':
+        direction = 'left';
+        break;
+    case 'ArrowRight':
+    case 'd':
+    case 'в':
+        direction = 'right';
+        break;
+    case 'ArrowUp':
+    case 'w':
+    case 'ц':
+        direction = 'up';
+        break;
+    case 'ArrowDown':
+    case 's':
+    case 'ы':
+        direction = 'down';
+        break;
+    }
+});
+
