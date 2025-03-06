@@ -10,7 +10,21 @@
   <body>
     <div class="content">     
       <h1> Лабораторная работа 1</h1>
-      <div class="tasks">
+     <div id="game-board"></div>
+     <div class="controls"></div>
+     
+     <div id="scoreDisplay">Счёт: <span id="scoreValue">0</span></div>     
+
+     <div class="tasks">
+      <canvas id="gameCanvas" width="800" height="600"></canvas>
+      <div class="joystick">
+          <button id="up">⬆</button>
+          <button id="left">⬅</button>
+          <button id="right">➡</button>
+          <button id="down">⬇</button>
+      </div>
+
+      <p> Управление змейкой: wasd, кнопки - стрелки </p>
       <h3> Задания: </h3>
        <ol>
          <li> Добавьте обработчики нажатия на клавиши стрелок. </li>
@@ -23,7 +37,7 @@
          <li> Добавьте пользовательский элемент ввода, позволяющий задать скорость </li>
        </ol>
     </div>
-     <div id="game-board"></div>
-     <div class="controls"></div> </div>
+    </div>
+
   </body>
 </html>

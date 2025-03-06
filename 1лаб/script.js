@@ -144,3 +144,26 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
+const buttonDirections = {
+  up: 'up',
+  left: 'left',
+  right: 'right',
+  down: 'down'
+};
+
+document.getElementById('up').addEventListener('click', () => direction = buttonDirections.up);
+document.getElementById('left').addEventListener('click', () => direction = buttonDirections.left);
+document.getElementById('right').addEventListener('click', () => direction = buttonDirections.right);
+document.getElementById('down').addEventListener('click', () => direction = buttonDirections.down);
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'r' || event.key === 'к') {
+      event.preventDefault();
+      resetGame(); 
+  }
+});
+
+////////////////////////////////////////////////////////////////////////////////
+
