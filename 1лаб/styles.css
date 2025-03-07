@@ -2,6 +2,8 @@
   display: grid;
   grid-template-columns: repeat(10, 30px);
   gap: 2px;
+  height: 300px;
+  width: 328px;
 }
 
 .cell {
@@ -21,6 +23,7 @@
 
 body {
   display: flex;
+  flex-direction: row;
 }
 
 .controls {
