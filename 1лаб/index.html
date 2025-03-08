@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <title>Лаба 1 - змейка</title>
     <meta charset="UTF-8" />
@@ -9,16 +9,22 @@
   </head>
   <body>
     <div class="content">     
-      <h1> Лабораторная работа 1</h1>
-     <div id="game-board"></div>
+      <h1> Лабораторная работа 1 - змейка</h1>
+      <div class="zmeika"> 
+        <div id="game-board"> </div>
+        <div class="scoreTab"> </div>
+        <div class="speedbutton"> </div>
+      </div>
      <div class="controls"></div>
      <div class="joystick">
-         <button id="up">⬆</button>
-         <button id="left">⬅</button>
-         <button id="right">➡</button>
-         <button id="down">⬇</button>
-     </div>
-     <div class="tasks">
+      <button id="up">⬆</button>
+      <div class="horizontal-buttons">
+          <button id="left">⬅</button>
+          <button id="down">⬇</button>
+          <button id="right">➡</button>
+      </div>
+  </div>
+    <div class="tasks">
       <p> Управление змейкой: wasd, кнопки - стрелки </p>
       <p> R - рестарт </p>
       <h3> Задания: </h3>
@@ -26,8 +32,6 @@
          <li> Добавьте обработчики нажатия на клавиши стрелок. </li>
          <li> Добавьте возможность управления змейкой при помощи кнопок. Для
            этого добавьте на игровое поле простейший джойстик со стрелками. </li>
-         <li> При нажатии на кнопки змейка должна реагировать также как и при
-           нажатии на клавиши. (Менять направление движения). </li>
          <li> Добавьте возможность сброса игры по нажатию на клавишу R. </li>
          <li> Добавьте отображение текущего количества набранных очков. </li>
          <li> Добавьте пользовательский элемент ввода, позволяющий задать скорость </li>

@@ -7,7 +7,7 @@
 .cell {
   width: 30px;
   height: 30px;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   box-sizing: border-box;
 }
 
@@ -23,18 +23,44 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(202, 230, 102);
 }
 
 .controls {
   flex-grow: 1;
 }
+
 .content{
 display: flex;
   flex-direction: column;
   align-content: space-around;
   align-items: center;
 }
-.joystick{
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+.zmeika{
+  display: flex;
+  flex-direction: row;
+}
+.joystick {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+.horizontal-buttons {
+  display: flex; 
+  justify-content: center; 
+}
+
+.joystick button {
+  width: 35px; 
+  height: 35px; 
+  font-size: 20px;
+  background-color: #4CAF50; 
+  color: white;
+  border-radius: 5px;
+  margin: 3px;
+}
+
+.joystick button:hover {
+  background-color: #45a049;
 }
