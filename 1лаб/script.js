@@ -103,22 +103,6 @@ function gameLoop() {
 }
 
 // TODO: добавить обработчик нажатия на клавиши
-
-// TODO: добавить обработчик нажатия клавиши R (сброс игры)
-
-// TODO: добавить обработчики нажатия кнопок
-
-// TODO: добавить возможность изменения скорости змейки
-
-updateScore(snake.length);
-gameLoop();
-
-function updateScore(score) {
-  // TODO: Реализуй меня!
-}
-
-///////////////////////////////////////////////////////
-
 document.addEventListener('keydown', function(event) {
   switch (event.key) {
     case 'ArrowLeft':
@@ -156,8 +140,8 @@ document.getElementById('left').addEventListener('click', () => direction = butt
 document.getElementById('right').addEventListener('click', () => direction = buttonDirections.right);
 document.getElementById('down').addEventListener('click', () => direction = buttonDirections.down);
 
-/////////////////////////////////////////////////////////////////////////////////////////
-
+// TODO: добавить обработчик нажатия клавиши R (сброс игры)
+//рестарт 
 document.addEventListener('keydown', function(event) {
   if (event.key === 'r' || event.key === 'к') {
       event.preventDefault();
@@ -165,5 +149,14 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
-////////////////////////////////////////////////////////////////////////////////
 
+// TODO: добавить обработчики нажатия кнопок
+
+// TODO: добавить возможность изменения скорости змейки
+
+updateScore(snake.length);
+gameLoop();
+
+function updateScore(score) {
+  // TODO: Реализуй меня!
+}

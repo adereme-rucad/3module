@@ -2,8 +2,6 @@
   display: grid;
   grid-template-columns: repeat(10, 30px);
   gap: 2px;
-  height: 300px;
-  width: 328px;
 }
 
 .cell {
@@ -23,9 +21,20 @@
 
 body {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
 }
 
 .controls {
   flex-grow: 1;
+}
+.content{
+display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: center;
+}
+.joystick{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
