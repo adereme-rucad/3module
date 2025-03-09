@@ -141,16 +141,12 @@ document.getElementById('right').addEventListener('click', () => direction = but
 document.getElementById('down').addEventListener('click', () => direction = buttonDirections.down);
 
 // TODO: добавить обработчик нажатия клавиши R (сброс игры)
-//рестарт 
+
 document.addEventListener('keydown', function(event) {
   if (event.key === 'r' || event.key === 'к') {
-      event.preventDefault();
       resetGame(); 
   }
 });
-
-
-// TODO: добавить обработчики нажатия кнопок
 
 // TODO: добавить возможность изменения скорости змейки
 
@@ -158,5 +154,4 @@ updateScore(snake.length);
 gameLoop();
 
 function updateScore(score) {
-  // TODO: Реализуй меня!
 }
